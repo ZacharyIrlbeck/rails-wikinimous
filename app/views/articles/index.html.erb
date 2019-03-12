@@ -1,0 +1,9 @@
+<h1> The Fake Wikinonmous </h1>
+<p> Posting stupid shit on the internet since 1998</p>
+
+
+<% @articles.each do |article| %>
+  <h4> <%= link_to article.title, "/articles/#{article.id}" %> </h4>
+<% end %>
+
+<%= link_to "'Contribute' something.", "/articles/new" %>

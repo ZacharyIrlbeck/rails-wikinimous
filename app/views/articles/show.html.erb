@@ -1,0 +1,7 @@
+<h1> <%= @article.title %></h1>
+
+<p> <%= @article.content %></p>
+
+<%= link_to "Delete", "/articles/#{@article.id}", method: :delete, data: { confirm: "You sure captain?"} %>
+
+<%= link_to "Edit", "/articles/#{@article.id}/edit" %>
